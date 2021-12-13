@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Container, Row, Col,
-         Nav, Navbar, NavDropdown,
-         Card, Button, Tab, Tabs, ProgressBar } from 'react-bootstrap'
+import { useState, useRef } from 'react';
+import {
+  Container, Row, Col, Nav, Navbar,
+  NavDropdown, Card, Button, Tab, Tabs, ProgressBar
+} from 'react-bootstrap';
 
 const App = () => {
   return (
@@ -113,17 +114,17 @@ const CDHelper = () => {
         <Col className="col-md-8">
           <Card className="text-left">
             <Card.Body>
-            <Card.Title>CD Helper</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">Pulling .ini driver</Card.Subtitle>
+              <Card.Title>CD Helper</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">Pulling .ini driver</Card.Subtitle>
               <Card.Text>
-              Some instruction to work with the helper
-              <ProgressBar now={progress} label={`${progress.toFixed(2)}%`} />
+                Some instruction to work with the helper
+                <ProgressBar now={progress} label={`${progress.toFixed(2)}%`} />
               </Card.Text>
-            <Button variant="outline-primary"
-              onClick={doSomeTask}
-              disabled={btn.disabled}>
-              {btn.msg}
-            </Button>
+              <Button variant="outline-primary"
+                onClick={doSomeTask}
+                disabled={btn.disabled}>
+                {btn.msg}
+              </Button>
             </Card.Body>
           </Card>
         </Col>
